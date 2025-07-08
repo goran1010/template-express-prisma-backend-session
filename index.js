@@ -36,6 +36,10 @@ app.use((req, res, next) => {
 
 app.use("/api", apiRouter);
 
+app.use((req, res) => {
+  res.status(404).json("No resource found");
+});
+
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   // eslint-disable-next-line no-console
