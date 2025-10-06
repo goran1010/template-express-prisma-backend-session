@@ -10,8 +10,8 @@ const sessionMiddleware = expressSession({
     maxAge: NUMBER_OF_DAYS * 24 * 60 * 60 * 1000,
   },
   secret: COOKIE_SECRET,
-  resave: true,
-  saveUninitialized: true,
+  resave: false,
+  saveUninitialized: false,
   store: new PrismaSessionStore(prisma, {
     checkPeriod: 2 * 60 * 1000,
     dbRecordIdIsSessionId: true,
