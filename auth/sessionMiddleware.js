@@ -1,5 +1,5 @@
 const NUMBER_OF_DAYS = 30;
-const COOKIE_SECRET = process.env.COOKIE_SECRET;
+const SECRET = process.env.SECRET;
 
 import expressSession from "express-session";
 import { PrismaSessionStore } from "@quixo3/prisma-session-store";
@@ -9,7 +9,7 @@ const sessionMiddleware = expressSession({
   cookie: {
     maxAge: NUMBER_OF_DAYS * 24 * 60 * 60 * 1000,
   },
-  secret: COOKIE_SECRET,
+  secret: SECRET,
   resave: false,
   saveUninitialized: false,
   store: new PrismaSessionStore(prisma, {
