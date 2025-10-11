@@ -15,7 +15,7 @@
   "type": "module",
   "keywords": [],
   "author": "Goran Jovic",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/goran1010/express-template-prisma-api/issues"
   },
