@@ -30,7 +30,7 @@ Before installation, make sure to:
 
 ```bash
 # Clone the repository
-git clone https://github.com/goran1010/template-express-prisma-backend-session.git
+git clone git@github.com:goran1010/template-express-prisma-backend-session.git
 
 # Navigate to project directory
 cd template-express-prisma-backend-session
